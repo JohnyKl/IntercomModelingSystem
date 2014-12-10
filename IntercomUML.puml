@@ -1,0 +1,32 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class intercom.Control
+class intercom.Housemates
+class intercom.Intercom
+class intercom.MainWindowJFrame
+class intercom.Settings
+class java.io.FileInputStream
+class java.io.FileNotFoundException
+class java.io.FileOutputStream
+class java.io.IOException
+class java.io.ObjectInputStream
+class java.io.ObjectOutputStream
+class java.util.ArrayList
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.swing.JFrame
+interface java.io.Serializable
+intercom.Housemates ..> java.util.ArrayList
+intercom.MainWindowJFrame ..> java.lang.SuppressWarnings
+intercom.MainWindowJFrame --|> javax.swing.JFrame
+intercom.Settings ..> java.io.FileInputStream
+intercom.Settings ..> java.io.FileNotFoundException
+intercom.Settings ..> java.io.FileOutputStream
+intercom.Settings ..> java.io.IOException
+intercom.Settings ..> java.io.ObjectInputStream
+intercom.Settings ..> java.io.ObjectOutputStream
+intercom.Settings ..> java.util.ArrayList
+intercom.Settings ..> java.util.logging.Level
+intercom.Settings ..> java.util.logging.Logger
+intercom.Settings --|> java.io.Serializable
+@enduml
